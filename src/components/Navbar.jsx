@@ -1,4 +1,3 @@
-import React from 'react'
 import { styles } from '../styles'
 import { useState } from 'react'
 import {navLinks} from '../constants'
@@ -8,9 +7,10 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
   const [active, setActive] = useState("")
+  const [toggle,setToggle] = useState(false)
   //this will keep track of which link are qwe currently on 
   return (
-    <nav className={`${ styles.paddingX } w-full flex items-center py-5 top-0 z-20 bg-primary`}>
+    <nav className={`${ styles.paddingX } w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className=' w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link to="/" className=' flex gap-2 items-center' onClick={()=>{
           setActive("")
@@ -31,6 +31,23 @@ const Navbar = () => {
           }
         </ul>
         
+        {/* this is for mobile navigation bar  */}
+        <div className=' sm:hidden flex flex-1 justify-end items-center'>
+          <img src={toggle ? close : menu} alt="menu" className=' w-[28px] h-[28px] object-contain cursor-pointer' onClick={()=> setToggle(!toggle) } />
+           <div className={`${ !toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
+            <ul className=' list-none flex sm:hidden justify-end items-start flex-col gap-4'>
+                {
+                  navLinks.map((Link) => (
+                    <li key={Link.id} className={`${active === Link.title ? " text-white" : " text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`} 
+                    onClick={() => {setActive(Link.title)
+                    setToggle(!toggle)}}>
+                      <a href={`#${Link.id}`}>{Link.title}</a>
+                    </li>
+                  ) )
+                }
+            </ul>
+           </div>
+        </div>
       </div>
 
     </nav>
