@@ -218,7 +218,7 @@
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  /* margin-bottom: px; */
 }
 .banner h1 {
   font-size: 65px;
@@ -229,6 +229,7 @@
 }
 #imgg{
   animation: updown 3s linear infinite;
+  /* scale: 0.75; */
 }
 @keyframes updown {
     0% {

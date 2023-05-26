@@ -25,13 +25,13 @@ const About = () => {
     <div>
       <motion.div variants={textVariant()} className=''>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Skills.</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("","",0.1,1)} className=' mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         I&apos;m a skilled Software Developer with experience in TypeScript and Javascript, and expertise in 
         frameworks such as React, Node.js, Three.js, TailwindCSS.I&apos;m a quick learner who can easily collaborate
-        with client and pushing myself to fulfilling his expectation.
+        with clients and push myself to fulfill required expectation.
       </motion.p>
 
       <div className=' mt-20 flex flex-wrap gap-10'>
@@ -47,4 +47,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "skills")

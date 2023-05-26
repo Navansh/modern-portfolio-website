@@ -19,16 +19,18 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
     jobit,
     tripguide,
     threejs,
+    razorpay_clone,
+    discord_clone,
+    ecomm_website,
   } from "../assets";
   
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: "home",
+      title: "Home",
     },
     {
       id: "skills",
@@ -202,16 +204,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Razorpay Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Developed a clone of Razorpay payment gateway using HTML, CSS and Tailwind CSS framework. The main aim of this project was to replicate the key features of Razorpay and develop a functional interface that looks and works like the original.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "css",
           color: "green-text-gradient",
         },
         {
@@ -219,50 +221,53 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: razorpay_clone,
+      source_code_link: "https://github.com/Navansh/Razorpay_Frontend_Clone",
+      live_link : "https://razorpay-frontend-clone.vercel.app/",
     },
     {
-      name: "Job IT",
+      name: "Discord Clone",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The Discord Clone project is a web-based application developed using HTML, CSS, and Tailwind. The aim of the project is to replicate the popular communication platform - Discord, with similar features and functionalities.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
         },
         {
           name: "css",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: discord_clone,
+      source_code_link: "https://github.com/Navansh/Discord-frontend-clone",
+      live_link : "https://discord-frontend-clone.vercel.app/" 
+    },
+    {
+      name: "Ecommerce Website",
+      description:
+        "The Ecommerce Website project is a web-based application developed using React.js, Redux, and Tailwind. The aim of the project is to create an online store where users can browse products, add items to their shopping cart, and make purchases.",
+      tags: [
+        {
+          name: "react.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "redux",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: ecomm_website,
+      source_code_link: "https://github.com/Navansh/shopping-website-react",
+      live_link : "https://shopping-website-react-1-iqbbbmy1x-navansh.vercel.app/"
     },
   ];
   

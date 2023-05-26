@@ -6,24 +6,28 @@ import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+import{ FiExternalLink } from 'react-icons/fi'
 
-const ProjectCard = ({index, name, description, tags, image, source_code_Link}) => {
+const ProjectCard = ({index, name, description, tags, image, source_code_link, live_link}) => {
   return (
     <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
       <Tilt options={{max : 45 , scale : 1,speed : 450,}} className=' bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
         <div className=' relative w-full h-[230px]'>
+          {/* Image for the Card  */}
           <img src={image} alt={name} className=' w-full h-full object-cover rounded-2xl' />
+          {/* This is for the GitHub Link  */}
           <div className=' absolute inset-0 flex justify-end m-3 card-img_hover gap-x-2'>
             {/* this is for the Github Link  */}
-            <div onClick={()=> window.open(source_code_Link,"_blank")} className=' black-gradient w-10 h-10 
+            <div onClick={()=> window.open(source_code_link,"_blank")} className=' black-gradient w-10 h-10 
              rounded-full flex justify-center items-center cursor-pointer'>
               <img src={github} alt="github" className='' />
             </div>
 
             {/* this is for the Live Link  */}
-            <div onClick={()=> window.open(source_code_Link,"_blank")} className=' black-gradient w-10 h-10 
+            <div onClick={()=> window.open(live_link,"_blank")} className=' black-gradient w-10 h-10 
              rounded-full flex justify-center items-center cursor-pointer'>
-              <img src="" alt="live_link" className='' />
+              <FiExternalLink className=' text-xl'></FiExternalLink>
+              {/* <img src="" alt="live_link" className='' /> */}
             </div>
 
           </div>
@@ -74,4 +78,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "projects")

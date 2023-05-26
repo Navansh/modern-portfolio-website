@@ -53,16 +53,15 @@ const Hero = () => {
       <section className='relative w-full mx-auto h-screen'>
         <div className={` absolute inset-0 top-[120px] max-w-7xl mx-auto` }>
           <div className='flex flex-col md:flex-row md:mt-10 w-full justify-between'>
-            <div className=' max-w-3xl mr-1'>
-              <span className=' tagline'>Welcome to my Portfolio</span>
-              <h1 className='text-7xl mt-10 md:mt-24 py-14'>{`👋 I'm Navansh `}
+            <div className=' max-w-3xl flex flex-col items-center md:block '>
+              <span className=' tagline max-w-max'>Welcome to my Portfolio !</span>
+              <h1 className='text-4xl md:text-7xl mt-10 md:mt-24 py-4'>{`👋 I'm Navansh `}
                 <br />
-                <div className=''></div>
-                <div className='wrap font-bold mt-2'> <span className='br22 '>{text} </span> </div>
               </h1>
+              <div className='wrap font-bold mb-10 text-4xl md:text-7xl'> <span className='br22 '>{text} </span> </div>
             </div>
 
-            <div>
+            <div className=' scale-75 md:scale-100'>
               <img src={headerImg} alt="banner" id='imgg' className=' scale-75' />
             </div>
           </div>
