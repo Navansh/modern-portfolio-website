@@ -25,6 +25,8 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import vrixam from "./company/Vrixam.png";
+import forzero from "./company/ForZero.png";
 
 import carrent from "./carrent.png";
 import razorpay_clone from './razorpay_clone.png'
@@ -32,6 +34,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import discord_clone from './discord_clone.png'
 import ecomm_website from './ecomm_website.png'
+import pointsix from './pointsix.png'
+import studynotion from './studynotion.png'
 
 export {
   logo,
@@ -59,10 +63,14 @@ export {
   shopify,
   starbucks,
   tesla,
+  vrixam,
+  forzero,
   carrent,
   jobit,
   tripguide,
   razorpay_clone,
   discord_clone,
   ecomm_website,
+  pointsix,
+  studynotion,
 };
