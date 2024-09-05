@@ -36,6 +36,8 @@ import discord_clone from './discord_clone.png'
 import ecomm_website from './ecomm_website.png'
 import pointsix from './pointsix.png'
 import studynotion from './studynotion.png'
+import finance from './finance_management_app.png'
+import react_admin from './react_admin_dashboard.png'
 
 export {
   logo,
@@ -73,4 +75,6 @@ export {
   ecomm_website,
   pointsix,
   studynotion,
+  finance,
+  react_admin
 };

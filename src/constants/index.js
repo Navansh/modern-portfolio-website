@@ -29,6 +29,8 @@ import {
     ecomm_website,
     pointsix,
     studynotion,
+    react_admin,
+    finance,
   } from "../assets";
   
   export const navLinks = [
@@ -220,52 +222,52 @@ import {
       live_link : "https://studynotion-edtech-project.vercel.app/"
     },
     {
-      name: "PointSix NFT Utility",
+      name: "Finance Tracking App",
       description:
-        "an innovative platform that revolutionizes the NFT space by empowering users to create utilities for their NFT collections.With our platform, NFT holders can add practical value and functionality to their digital assets, making them more than just collectibles.",
+        "A comprehensive fintech platform that allows users to securely connect multiple bank accounts, view and transfer funds, track transactions in real-time, auto-categorize expenses, and manage personal finances with an intuitive, user-friendly dashboard across all accounts.",
       tags: [
         {
           name: "next.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "appwrite",
           color: "green-text-gradient",
         },
         {
-          name: "node",
+          name: "node.js",
           color: "pink-text-gradient",
         },
         {
-          name: "metamask",
+          name: "dwolla",
           color: "blue-text-gradient",
         }
       ],
-      image: pointsix,
-      source_code_link: "https://github.com/Navansh/utility",
-      live_link : "https://www.pointsix.xyz/" 
+      image: finance,
+      source_code_link: "https://github.com/Navansh/horizon-web",
+      live_link : "https://horizon-web-sepia.vercel.app/sign-in" 
     },
     {
-      name: "Payment Gateway App",
+      name: "React Admin Dashboard",
       description:
-        "It is the simplest and most powerful way to accept payments online. With this, you can accept payments from all major credit and debit cards, UPI, and popular mobile wallets, helping you scale your online business, without worrying about compliance",
+        "A robust admin panel featuring tabulated customer data, diverse forms, and interactive charts for enhanced data visualization. Includes advanced filtering options, CSV export, direct printing, and customizable components for scalability and ease of use.",
       tags: [
         {
-          name: "html",
+          name: "react.js",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
+          name: "javascript",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "material-ui",
           color: "pink-text-gradient",
         },
       ],
-      image: razorpay_clone,
-      source_code_link: "https://github.com/Navansh/Razorpay_Frontend_Clone",
-      live_link : "https://razorpay-frontend-clone.vercel.app/",
+      image: react_admin,
+      source_code_link: "https://github.com/Navansh/react-admin-dashboard",
+      live_link : "https://react-admin-dashboard-olive-iota.vercel.app/",
     },
     
     // {
